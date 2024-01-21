@@ -47,12 +47,12 @@
 
     <!----------------------------------------- Header Section ----------------------------------->
 
-    <header class="container mx-auto px-32">
-        <div class="flex justify-between items-center pt-8">
+    <header class="container mx-auto px-4 lg:px-32">
+        <div class="flex justify-between items-center px-2 lg:px-0 pt-8">
             <div>
                 <img src="images/logo2.png" alt="">
             </div>
-            <div>
+            <div class="lg:flex hidden">
                 <ul class="flex gap-6 items-center  text-secondary">
                     <li class=""><a href="">Home</a></li>
                     <li class=""><a href="">Services<img class="inline w-5" src="images/Frame.svg" alt=""></a></li>
@@ -61,22 +61,25 @@
                     <li><a href="">Contact Us<img class="inline w-5" src="images/Frame.svg" alt=""></a></li>
                 </ul>
             </div>
-            <div>
+            <div class="flex lg:hidden">
+                <img class="w-8" src="images/Menu.svg" alt="">
+            </div>
+            <div class="hidden lg:flex">
                 <button class="px-7 py-4 bg-btn text-white text-lg font-semibold rounded-lg">Free Consultation</button>
             </div>
         </div>
-        <section class="mt-12">
+        <section class=" mt-12">
             <div class="bg-[url('./images/banner.png')] h-[500px] bg-cover bg-center rounded-lg">
                 <div class=" w-full h-full bg-gradient-to-b from-transparent to-black  relative rounded-lg">
                     <div class="w-full h-full flex flex-col items-center justify-center ">
-                        <h1 class="text-6xl font-extrabold font-garamond text-[#fff] text-center pb-6">We Provide
+                        <h1 class=" text-3xl lg:text-6xl font-extrabold font-garamond text-[#fff] text-center pb-6">We Provide
                             Effective<br> Legal Solutions</h1>
 
-                        <p class="font-poppins text-[#fff] w-7/12 text-center">There are many variations of passages of
+                        <p class="font-poppins text-[#fff] w-10/12 lg:w-7/12 text-center">There are many variations of passages of
                             Lorem Ipsum available, but the majority have suffered alteration in some form, by injected
                             humour.</p>
-                        <div class="mt-7 space-x-5">
-                            <input class="px-5 py-4 rounded-lg w-[450px] placeholder-[#A0A0A0]" type="text"
+                        <div class="mt-7 space-x-5 flex justify-center">
+                            <input class="px-5 py-4 rounded-lg w-[50%] lg:w-[450px] placeholder-[#A0A0A0]" type="text"
                                 placeholder="Search your services">
                             <button
                                 class="px-7 py-3.5 bg-btn text-white text-lg font-semibold rounded-lg">Subscribe</button>
@@ -86,17 +89,17 @@
             </div>
         </section>
     </header>
-    <main class="container mx-auto px-32">
+    <main class="container mx-auto px-4 lg:px-32">
 
         <!-------------------------------------- Law Practive Section --------------------------------->
 
-        <section class="mt-24">
+        <section class="lg:mt-24 mt-8">
             <div class="flex flex-col justify-center items-center">
                 <h3 class="font-garamond text-primary font-extrabold text-4xl pb-6 ">The Legal Practice Area</h3>
-                <p class="font-poppins text-secondary text-center w-8/12">There are many variations of passages of Lorem
+                <p class="font-poppins text-secondary text-center w-10/12 lg:w-8/12">There are many variations of passages of Lorem
                     Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
             </div>
-            <div class="grid grid-cols-3 mt-14">
+            <div class="grid grid-cols-1 lg:grid-cols-3 mt-6 lg:mt-14">
                 <div class="p-12 border-b border-[#E7E7E7] flex flex-col justify-center items-center">
                     <img class="pb-8" src="images/business.png" alt="">
                     <h3 class="pb-6 font-garamond text-primary font-extrabold text-3xl">Business Law</h3>
@@ -145,7 +148,7 @@
 
         <!------------------------------------ Client Say Section  ----------------------------------->
 
-        <section class="mt-24">
+        <section class="lg:mt-24 mt-8">
             <div class="flex flex-col justify-center items-center">
                 <h3 class="font-garamond text-primary font-extrabold text-4xl pb-6 ">What Our Client Say</h3>
                 <p class="font-poppins text-secondary text-center w-8/12">There are many variations of passages of Lorem
@@ -223,14 +226,14 @@
 
         <!---------------------------- FAQ Section ------------------------------------>
 
-        <section class="mt-24">
+        <section class="lg:mt-24 mt-8">
             <div class="flex flex-col justify-center items-center">
-                <h3 class="font-garamond text-primary font-extrabold text-4xl pb-6 ">Frequently Asked Any Questions</h3>
-                <p class="font-poppins text-secondary text-center w-8/12">There are many variations of passages of Lorem
+                <h3 class="font-garamond text-primary font-extrabold text-2xl  lg:text-4xl pb-6 text-center lg:text-left">Frequently Asked Any Questions</h3>
+                <p class="font-poppins text-secondary text-center w-full  lg:w-8/12">There are many variations of passages of Lorem
                     Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
             </div>
 
-            <div class="mt-14 flex gap-6 justify-between">
+            <div class="lg:mt-14 mt-6  flex flex-col-reverse lg:flex-row gap-6 justify-between">
                 <div class="flex-1 ">
                     <div class="collapse collapse-plus bg-base-200 mb-5 rounded-lg">
                         <input type="radio" name="my-accordion-3" checked="checked"  /> 
@@ -277,14 +280,14 @@
 
         <!------------------------------- Contact Section ----------------------------------------->
 
-        <section class="mt-24">
+        <section class="lg:mt-24 mt-8 ">
             <div class="flex flex-col justify-center items-center">
-                <h3 class="font-garamond text-primary font-extrabold text-4xl pb-6 ">Contact With Us</h3>
-                <p class="font-poppins text-secondary text-center w-8/12">There are many variations of passages of Lorem
+                <h3 class="font-garamond text-primary font-extrabold text-2xl lg:text-4xl pb-4 lg:pb-6 ">Contact With Us</h3>
+                <p class="font-poppins text-secondary text-center w-full lg:w-8/12">There are many variations of passages of Lorem
                     Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
             </div>
-            <div class="flex justify-between mt-14 gap-7">
-                <div class="flex-1 grid grid-cols-2">
+            <div class="flex flex-col lg:flex-row justify-between mt-6 lg:mt-14 gap-7">
+                <div class="flex-1 grid grid-cols-1 gap-5 lg:gap-0 lg:grid-cols-2">
                     <div class="flex flex-col justify-center items-center space-y-4 p-10 bg-[#F3F3F3] border-b border-r border-[#CFCFCF]">
                         <img src="images/location.png" alt="">
                         <h4 class="font-garamond text-2xl text-primary font-extrabold">Address</h4>
@@ -324,15 +327,15 @@
             </div>
         </section>
     </main>
-    <footer class="mt-24 bg-[#111]">
-     <div class="container mx-auto px-32">
-        <div class="flex justify-between items-top py-28">
-            <div>
+    <footer class="lg:mt-24 mt-8 bg-[#111]">
+     <div class="container mx-auto px-4 lg:px-32">
+        <div class="flex flex-col lg:flex-row items-center justify-between items-top py-8 lg:py-28">
+            <div class="flex flex-col items-center lg:items-start mb-5 lg:mb-0">
                 <img src="images/logo.png" alt="">
-                <p class="text-[#CFCFCF] w-60 pt-8">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+                <p class="text-[#CFCFCF] w-full lg:w-60 pt-8 text-center lg:text-left">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
             </div>
-            <div>
-                <h4 class="font-garamond text-white text-2xl font-extrabold pb-11">Usefull Link</h4>
+            <div class="flex flex-col items-center lg:items-start mb-5 lg:mb-0">
+                <h4 class="font-garamond text-white text-2xl font-extrabold pb-2 lg:pb-11">Usefull Link</h4>
                 <ul>
                     <li class="pb-3"><a class="text-[#CFCFCF]" href="">Home</a></li>
                     <li class="pb-3"><a class="text-[#CFCFCF] " href="">About Us</a></li>
@@ -341,8 +344,8 @@
                     <li><a class="text-[#CFCFCF]" href="">Contacts</a></li>
                 </ul>
             </div>
-            <div>
-                <h4 class="font-garamond text-white text-2xl font-extrabold pb-11">Contact Now</h4>
+            <div class="flex flex-col items-center lg:items-start mb-5 lg:mb-0">
+                <h4 class="font-garamond text-white text-2xl font-extrabold pb-2 lg:pb-11">Contact Now</h4>
                 <p class="text-[#CFCFCF] pb-4">555 4th 5t NW, Washington<br>
                     DC 20530, United States</p>
                 <p class="text-[#CFCFCF] pb-4">+88 01750 000 000<br>
@@ -350,9 +353,9 @@
                 <p class="text-[#CFCFCF]">info@gmail.com<br>
                     info@gmail.com</p>
             </div>
-            <div>
-                <h4 class="font-garamond text-white text-2xl font-extrabold pb-11">Subscribe</h4>
-                <p class="text-[#CFCFCF] w-52 pb-6">Subscribe for our latest & Articles. We Won’t Give You Spam Mails</p>
+            <div class="flex flex-col items-center lg:items-start mb-5 lg:mb-0">
+                <h4 class="font-garamond text-white text-2xl font-extrabold pb-2 lg:pb-11">Subscribe</h4>
+                <p class="text-[#CFCFCF] w-full text-center lg:text-left lg:w-52 pb-6 ">Subscribe for our latest & Articles. We Won’t Give You Spam Mails</p>
                 <div class="flex justify-center items-center">
                     <input type="email" placeholder="Email Address" class="rounded-l-lg px-5 py-4 w-52 font-poppins placeholder-[#A0A0A0]">
                     <img class="inline bg-btn px-5 py-[11px] rounded-lg -ml-2" src="images/send.svg" alt="">
